@@ -32,7 +32,7 @@ const Register: React.FC = () => {
 
   // Scramble effect
   const [buttonText, setButtonText] = useState('Registrarse →');
-  const scrambleIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const scrambleIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const originalText = 'Registrarse →';
 
   const scrambleText = () => {
